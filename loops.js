@@ -11,9 +11,10 @@ Within the _FOR_ loop, use `console.log` to:
 var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
 
 for(var i = 0; i<presidents.length; i++){
+  console.log(i);
   console.log(presidents[i]);
-  console.log("Value of i is: " + [i]);
-  console.log("Value at " + [i] + " is: " + presidents[i]);
+  console.log("The value of i is: " + i);
+  console.log("The value at " + [i] + " is: " + presidents[i]);
 }
 
 /***bonus:** could you take the code inside of this FOR loop and encapsulate it inside of a function called `printContent` and still achieve the same result? This new function should accept two parameters.*/
@@ -124,13 +125,30 @@ Declare a function named `nap`. This function takes in a single parameter called
 Now, Write a FOR loop that iterates through the `napSchedule` array and runs the function `nap` while passing in the value at the current position of `napSchedule` into the `nap` function.*/
 
 
+var isNapTime = false;
+var napSchedule = [false, false, true, false, true, true];
+
+function nap(schedule) {
+	if (schedule === true){
+	console.log("ZzZzZzZz");
+	}else{
+	console.log("Gotta get to work!");
+	isNapTime=true;
+}
+}
+for(var i = 0; i<napSchedule.length; i++){
+ nap(napSchedule[i]);
+}
 
 /*Declare a variable named `valuesArray` and set it's value to be an array, `[99, 66, 829, 1941, 8, 76]`.
 
 Declare a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. Inside of this function you will loop through the contents of `originArray` and push each value into `destinationArray`.
 
 To get started, below your function declaration, call your function and pass in the two variables, `valuesArray` and `copyOfValuesArray`. After that, use `console.log` to to inspect the values of `valuesArray` and `copyOfValuesArray` to make sure they have the same values (which means your function worked!).*/
-
+var valuesArray = [99, 66, 829, 1941, 8, 76]
+function copyArray(originArray,destinationArray) {
+	// body...
+}
 
 
 
