@@ -145,12 +145,16 @@ for(var i = 0; i<napSchedule.length; i++){
 Declare a function named `copyArray` which takes two arguments: `originArray` and `destinationArray`. Inside of this function you will loop through the contents of `originArray` and push each value into `destinationArray`.
 
 To get started, below your function declaration, call your function and pass in the two variables, `valuesArray` and `copyOfValuesArray`. After that, use `console.log` to to inspect the values of `valuesArray` and `copyOfValuesArray` to make sure they have the same values (which means your function worked!).*/
-var valuesArray = [99, 66, 829, 1941, 8, 76]
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+var copyOfValuesArray = [];
 function copyArray(originArray,destinationArray) {
-	// body...
+	for (var i = 0; i < originArray.length;i++) {
+		destinationArray.push(originArray[i]);
+	
+	}
+	return destinationArray;
 }
-
-
+console.log (copyArray(valuesArray,copyOfValuesArray));
 
 
 /*![final-boss](https://s3.amazonaws.com/uploads.hipchat.com/54891/2015941/zamX8AqbgYw0QJ8/giphy.gif)
