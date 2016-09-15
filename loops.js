@@ -104,8 +104,12 @@ nope
 turn
 ```*/
 
+var backwardsOopsArray = [];
+for (var i = oopsArray.length - 1; i>=0; i--) {
+ 	backwardsOopsArray.push(oopsArray[i]);
+ } 
 
-
+console.log(backwardsOopsArray);
 
 /*## `isNapTime`
 Declare a variable named `isNapTime`. Set it to `false`
@@ -118,7 +122,6 @@ Declare a function named `nap`. This function takes in a single parameter called
 - otherwise if `schedule` is `false` use `console.log` to display the message `Gotta get to work!` and then change the value of `isNapTime` to `true`
 
 Now, Write a FOR loop that iterates through the `napSchedule` array and runs the function `nap` while passing in the value at the current position of `napSchedule` into the `nap` function.*/
-
 
 
 
